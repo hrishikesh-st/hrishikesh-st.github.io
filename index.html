@@ -151,33 +151,6 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
-          <!-- Semantic Point Painting -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/semanticpc.jpg' width="190"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Semantic Point Cloud Painting</strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Semantic-Point-Painting">Github</a>
-              <p> Built a map from LiDAR point clouds (taken directly from KITTI-360 dataset) using Point to Point ICP.</p>
-              <p>Semantically segmented images using DeepLabv3 and then transfered these semantic labels to the generated ICP map</p>
-            </td>
-          <!-- Sfm -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/lineartr.png' width="190"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Structure from Motion - 3D Reconstruction </strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Structure-from-Motion-NeRF/tree/master">Github</a>
-              <p> Implemented Non-Linear Triangulation, PnP and Bundle Adjustment to reconstruct the 3D structure of a building at WPI.</p>
-            </td>
-
-
           <!-- Camera Calibration -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
@@ -207,41 +180,11 @@
               <p> Used RANSAC for removing the outliers among the feature matches</p>
                 
             </td>
-
-          <!-- Face Swap -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/Blended_DLN.png' width="140"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Face Swap </strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Swapping-Faces-using-TPS-and-Delenauy-Triangulation">Github</a>
-              <p> Successfully swapped faces between 2 people by using Delenauy Triangulation and Inverse Barycentric Coordinates</p>  
-            </td>
-          
-            <!--Probability based Edge Detection -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/pblite.jpg' width="160"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Probability based edge detection </strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Filter-Banks-for-Edge-Detection">Github</a>
-              <p>  Implemented a edge detector which works by searching for texture,color and intensity discontinuities across multiple scales.</p>
-              <p> Essentially it is a simpler implementaion of <a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/amfm_pami2010.pdf">Pablo Arbelaez's</a> paper </p> 
-            </td>
-
-          </tbody></table>
-
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><b>Machine Learning/Deep Learning Projects</b></heading>
+              <heading><b>Deep Learning Projects</b></heading>
               <!-- <p>
                 Projects with publications are <span class="highlight">highlighted</span>.
               </p> -->
@@ -262,106 +205,6 @@
               <br> <a href="https://github.com/rane-tejas/Zero-shot_Semantic_NST">Github</a>
               <p> Implemented AdaAttN for diverse style application on images with text-based image segmentation using CLIPSeg</p>
             </td>
-
-          <!-- Mobile Nerf-->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <!-- <div class="one">
-                <img src='images/mobile_nerf.mp4' width="160">
-              </div> -->
-              <div class="two" id='mobile_nerf'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mobile_nerf.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Mobile Nerf</strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/MobileNeRF">Github</a>
-              <p> Using the Pytorch API, optimised the NeRF model for embedded deployment. Performed pruning and quantization aware iterative training.</p>
-              <p>Deployed the model on a M1 chip using Snapchat's Lensstudio and ONNX. Acheived realtime scene rendering on the iPad.</p>
-                 
-            </td>
-
-          <!--Nerf -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/nerf.gif' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Neural Radiance Field (NeRF)</strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Structure-from-Motion-NeRF/blob/master/Code/Phase2/nerf.py">Github</a>
-              <p> Implemented the original NeRF paper which includes ray sampling, positional encoding and volume rendering.</p>
-              
-            </td>
-
-          <!--Embedded Deep Learning Projects-->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/tinyML.jpg' width="180">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Embedded Deep Learning Projects</strong></papertitle>
-              <br> 
-              <p> <a href="https://github.com/shounaknaik/Pruning_Quantization"> Pruning, Quantization</a> for optimizing the VGG-16 network for CIFAR-10 classification</p>
-              <p> <a href="https://github.com/shounaknaik/NAS"> Neural Architecture Search</a> for microcontroller deployment from MCUNet super-network by evolutionary search.</p>
-              <p> <a href="https://github.com/shounaknaik/Dynamic-Network-Inference"> Dynamic Network Inference</a> on BranchyNet to achieve entropy based early exit.</p>
-            
-            </td>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><b>System level or Embedded Systems Projects </b></heading>
-              <!-- <p>
-                Projects with publications are <span class="highlight">highlighted</span>.
-              </p> -->
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <!-- Memory Hierarchy -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:15px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/paging.png' width="160"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Memory Hierachy Simulation</strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Memory-Hierarchy-Simulation">Github</a>
-              <p> Simulated the complete memory hierarchy having the following specification:
-                <ul>
-                  <li>TLB, L1 Cache with a LRU replacement policy, L2 Cache with a FIFO replacement policy.</li>
-                  <li>Main memory with a hierarchical paging and with thrashing policy as Page fault frequency.</li>
-                </ul>
-              </p>
-            </td>
-
-          <!-- 8086-->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/pindiagramof808611.png' width="160">
-              </div>
-              
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Intoxication Level Detector</strong></papertitle>
-              <br> 
-              <p>Built with a 8086 microprocessor, 8259 interrupt controller, 8253 Programmable Interrupt, RAM and ROM chips.</p>
-              <p>This machine measures the reaction time of a person with respect to a predefined stimulus. Based on the reaction time, the intoxication level of the person is displayed on a 7-segment LED</p>
-                 
-            </td>
-
-         
-
-          
 
           </tbody></table>
 
