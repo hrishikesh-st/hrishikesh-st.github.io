@@ -7,7 +7,7 @@
 
     <meta name="author" content="Hrishikesh Pawar">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/eye_logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/dl_logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -92,7 +92,7 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <!-- Cognex Corporation-->
+          <!-- Adagrad -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
@@ -128,13 +128,14 @@
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
             <td style="padding:15px;width:25%;vertical-align:top">
               <div class="one">
-                <a href="https://wp.wpi.edu/merlab/"><img src='images/cross_pile.gif' width="190"> </a>
+                <a href="https://wp.wpi.edu/merlab/"><img src='images/mer_icon.png' width="190"> </a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <papertitle><strong>MER Lab</strong></papertitle>
               <br> Graduate Student Researcher
               <p> Utilising depth images and point clouds to manipulate the waste stream using a robotic arm, and uncover occluded and covered objects</p>
+              <p> <a href="waste_sorting_about.html"> Project Link</a> </p>
             </td>
           </tbody></table>
 
@@ -150,6 +151,34 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!-- PBLite -->
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/pblite.jpg' width="160"> 
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <papertitle><strong> </strong></papertitle>
+              <br> <a href="https://github.com/hrishikesh-st/EdgeDetection-ConvNetBackbones">Github</a>
+              <p> Implemented a edge detector which works by searching for texture, color and intensity discontinuities across multiple scales..</p>
+              <p> Essentially it is a simpler implementaion of <a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/amfm_pami2010.pdf">Pablo Arbelaez's </a> paper.</p>
+            </td>
+
+            <!-- Panoroma Stitching -->
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/CustomSet1_FullStitch.png' width="160"> 
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <papertitle><strong>Panoroma Stitching</strong></papertitle>
+              <br> <a href="https://github.com/hrishikesh-st/AutoPan">Github</a>
+              <p> Implemented Feature Detection followed by Adaptive Non-Maximal Suppression (ANMS) to ensure even distribution of corners across images, enhancing panorama stitching accuracy..</p>
+              <p> Utilized Feature Matching and Robust Homography estimation using RANSAC, further refining match quality. Employed image blending startegies like alpha blending and poissons blending.</p>
+            </td>
           
           <!-- Camera Calibration -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
@@ -160,26 +189,11 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <papertitle><strong>Camera Calibration </strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Camera-Calibiration-by-Estimating-External-and-Intrinsic-Matrices">Github</a>
-              <p> Implementated Zhang's camera calibration method from scratch to estimate the camera intrinsics and distortion parameters.</p>
+              <br> <a href="https://github.com/hrishikesh-st/Zhang-AutoCalib">Github</a>
+              <p> Implementated the seminal work of <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf">Zhengyou Zhang</a> from scratch to estimate the camera intrinsics and distortion parameters.</p>
               <p> Used SVD and MLE for estimating the camera calibration parameters</p>
             </td>
 
-          <!-- Panaroma Stitching -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/stiched.png' width="140"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Panaroma Stitching </strong></papertitle>
-              <br> <a href="https://github.com/shounaknaik/Panaroma-Stitching">Github</a>
-              <p> Used Adaptive non max suppression to retain high quality features. Matched features between image pair and then estimated homography.</p>
-
-              <p> Used RANSAC for removing the outliers among the feature matches</p>
-                
-            </td>
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -202,19 +216,15 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <papertitle><strong>Zero Shot Semantic Style Transfer</strong></papertitle>
-              <br> <a href="https://github.com/rane-tejas/Zero-shot_Semantic_NST">Github</a>
-              <p> Implemented AdaAttN for diverse style application on images with text-based image segmentation using CLIPSeg</p>
+              <br> <a href="https://github.com/hrishikesh-st/Zero-Shot_Semantic_NST">Github</a>
+              <p> Implemented AdaAttN for diverse style application on images with text-based image segmentation using CLIPSeg.</p>
             </td>
 
           </tbody></table>
-
-
         </tbody></table>
 
-        
-      
         <!-- Footnote -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
@@ -223,7 +233,7 @@
               </p>
             </td>
           </tr>
-        </tbody></table>
+        </tbody></table> -->
       </td>
     </tr>
   </table>
