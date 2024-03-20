@@ -151,6 +151,65 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+
+        <!-- NeRF -->
+        <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <td style="padding:20px;width:25%;vertical-align:top">
+            <div class="one">
+              <img src='images/NeRF_lego.gif' width="160">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            <papertitle><strong>Neural Radiance Field (NeRF) </strong></papertitle>
+            <br> <a href="https://github.com/hrishikesh-st/NeRF">Github</a>
+            <p> Implemented the Neural Radiance Fields (NeRF) technique for synthesizing novel views of scenes. This project leverages deep neural networks to model the volumetric scene function, encoding the density and color of points in space as a function of viewing direction and location. </p>
+            <p> Applied gradient descent optimization to adjust network parameters, achieving photorealistic image synthesis from sparse input views by accurately interpolating the light field.</p>
+          </td>
+
+          <!-- Structure from Motion -->
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/SFM.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <papertitle><strong>Classical Structure from Motion </strong></papertitle>
+              <br> <a href="https://github.com/hrishikesh-st/Classical_Structure_from_Motion">Github</a>
+              <p> Developed a the Classical Structure from Motion (SfM) pipeline to reconstruct 3D structures from sequences of 2D images. This project integrates key techniques such as feature detection, matching, motion recovery, and 3D reconstruction.</p>
+              <p> Utilized essential matrix computation, bundle adjustment, and triangulation methods to accurately estimate 3D points and camera positions, demonstrating the core principles of SfM in computer vision.</p>
+            </td>
+          
+
+          <!-- Camera Calibration -->
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <img src='images/calibration-patterns.gif' width="160"> 
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <papertitle><strong>Camera Calibration </strong></papertitle>
+              <br> <a href="https://github.com/hrishikesh-st/Zhang-AutoCalib">Github</a>
+              <p> Implementated the seminal work of <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf">Zhengyou Zhang</a> from scratch to estimate the camera intrinsics and distortion parameters.</p>
+              <p> Used SVD and MLE for estimating the camera calibration parameters.</p>
+            </td>
+
+          
+            <!-- Panoroma Stitching -->
+            <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <img src='images/CustomSet1_FullStitch.png' width="160"> 
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <papertitle><strong>Panoroma Stitching</strong></papertitle>
+                <br> <a href="https://github.com/hrishikesh-st/AutoPan">Github</a>
+                <p> Implemented Feature Detection followed by Adaptive Non-Maximal Suppression (ANMS) to ensure even distribution of corners across images, enhancing panorama stitching accuracy..</p>
+                <p> Utilized Feature Matching and Robust Homography estimation using RANSAC, further refining match quality. Employed image blending startegies like alpha blending and poissons blending.</p>
+              </td>
 
           <!-- PBLite -->
           <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
@@ -165,35 +224,6 @@
               <p> Implemented a edge detector which works by searching for texture, color and intensity discontinuities across multiple scales..</p>
               <p> Essentially it is a simpler implementaion of <a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/amfm_pami2010.pdf">Pablo Arbelaez's </a> paper.</p>
             </td>
-
-            <!-- Panoroma Stitching -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/CustomSet1_FullStitch.png' width="160"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Panoroma Stitching</strong></papertitle>
-              <br> <a href="https://github.com/hrishikesh-st/AutoPan">Github</a>
-              <p> Implemented Feature Detection followed by Adaptive Non-Maximal Suppression (ANMS) to ensure even distribution of corners across images, enhancing panorama stitching accuracy..</p>
-              <p> Utilized Feature Matching and Robust Homography estimation using RANSAC, further refining match quality. Employed image blending startegies like alpha blending and poissons blending.</p>
-            </td>
-          
-          <!-- Camera Calibration -->
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <img src='images/calibration-patterns.gif' width="160"> 
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <papertitle><strong>Camera Calibration </strong></papertitle>
-              <br> <a href="https://github.com/hrishikesh-st/Zhang-AutoCalib">Github</a>
-              <p> Implementated the seminal work of <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf">Zhengyou Zhang</a> from scratch to estimate the camera intrinsics and distortion parameters.</p>
-              <p> Used SVD and MLE for estimating the camera calibration parameters</p>
-            </td>
-
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -224,16 +254,16 @@
         </tbody></table>
 
         <!-- Footnote -->
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Thank You to <a href="https://jonbarron.info/">Jon Barron</a> for this template!
+                Source code and style from <a href="https://jonbarron.info/">Jon Barron's</a> template.
               </p>
             </td>
           </tr>
-        </tbody></table> -->
+        </tbody></table>
       </td>
     </tr>
   </table>
